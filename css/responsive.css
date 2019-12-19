@@ -1,0 +1,306 @@
+/************************************************
+[Responsive Stylesheet]
+
+Project Name    : 
+Team & Company  : 
+Desgined By     : 
+Developed By    : 
+Date            : 
+*************************************************/
+
+@media (min-width: 1200px) {}
+
+/* ===================Large Display==============*/
+@media (max-width: 1199px) {
+    /*----hero area------*/
+    .hero_area .hero_content>h1 {
+        font-size: 77px;
+        line-height: 84px;
+    }
+    
+    .content_block .content_text>h1 {
+        font-size: 58px;
+    }
+    
+    .about_section .about_content1 {
+        padding-left: 30px;
+        padding-right: 20px;
+    }
+    .blog_section .single_blog h3 {
+        font-size: 27px;
+    }
+    .subscribe_section .section_title {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    
+    
+    
+}
+
+
+/* ==================Tab Screen===================*/
+
+@media (max-width: 991px) {
+    .nav-wrapper ul li a {
+        color: #333;
+    }
+    ul.dropdown li a:hover,
+    .nav-wrapper>ul>li.active>a,
+    .nav-wrapper>ul>li.active>a>i,
+    .nav-wrapper ul li a:hover {
+        color: #1b4ff3;
+    }
+    .hero_area .fullHeight.align_row_center_center {
+        flex-flow: column-reverse nowrap;
+        height: auto;
+        align-items: flex-start;
+    }
+    .hero_area .hero_img {
+        margin-left: 0;
+        margin-top: 70px;
+    }
+    .hero_area .hero_content {
+        padding: 50px 0;
+    }
+    .hero_area .hero_content>p {
+        max-width: 410px;
+    }
+    .hero_area .hero_content>h1 {
+        max-width: 670px;
+    }
+    
+    .subscribe_section .section_title,
+    .blog_section .section_title,
+    .about_section .section_title,
+    .upcoming_event .section_title {
+        font-size: 50px;
+        line-height: 60px;
+        padding-bottom: 38px;
+    }
+    
+    .upcoming_event {
+        padding-top: 90px;
+    }
+    .upcoming_event .owl-nav {
+        margin-top: 60px;
+    }
+    .special_quote .quote_content>h2 {
+        font-size: 33px;
+        line-height: 50px;
+    }
+    
+    
+    .content_block {
+        padding: 70px 0 100px;
+    }
+    .content_block .single_content {
+        display: block;
+        margin-bottom: 130px;
+    }
+    .content_block .content_img {
+        padding-right: 0;
+        width: 100%;
+    }
+    .content_block .content_text {
+        margin-top: 50px;
+        max-width: 640px;
+        width: 100%;
+    }
+    .single_content:nth-child(2n) .content_img {
+        padding-left: 0;
+    }
+    
+    
+    .about_section {
+        padding: 90px 0 100px;
+    }
+    .about_section .about_content1 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .about_section .about_content2 {
+        margin-top: 30px;
+    }
+    
+    
+    .blog_section {
+        padding: 100px 0;
+    }
+    .blog_section .single_blog h3 {
+        font-size: 20px;
+        line-height: 30px;
+        padding-top: 30px;
+    }
+    .blog_section .single_blog p {
+        font-size: 14px;
+    }
+    .blog_section .readmore.playfair {
+        height: 50px;
+        margin: 70px auto 0;
+        padding: 10px 22px;
+        width: 171px;
+    }
+    
+    
+    .subscribe_section {
+        padding: 90px 0;
+    }
+    .subscribe_section form {
+        margin: 0 auto;
+        max-width: 550px;
+    }
+    .subscribe_section form input {
+        height: 65px;
+        padding: 15px 20px;
+    }
+    .subscribe_section form button {
+        height: 65px;
+    }
+    
+    
+    .footer_section {
+        padding: 100px 0;
+    }
+    .footer_section .footer_menu {
+        padding-bottom: 30px;
+        padding-top: 70px;
+    }
+    .footer_section .footer_menu a {
+        margin: 0 20px;
+    }
+    
+    
+    
+}
+
+
+
+/* ===================Medium Mobile Screen==============*/
+@media (max-width: 767px) {
+    .hero_area .hero_content>h1 {
+        font-size: 63px;
+        line-height: 76px;
+    }
+    .hero_area .hero_content>p {
+        padding-bottom: 40px;
+        padding-top: 20px;
+    }
+    .special_quote .quote_content>h2 {
+        font-size: 25px;
+        line-height: 40px;
+    }
+    
+    .content_block .content_text>h1 {
+        font-size: 42px;
+        line-height: 52px;
+    }
+    .content_block .single_content {
+        margin-bottom: 80px;
+    }
+    
+    .about_section .about_img img {
+        margin: 0 auto 30px;
+    }
+    .about_section .about_content1 {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+    .about_section .about_content2 {
+        text-align: center;
+    }
+    
+    
+    .blog_section {
+        padding: 70px 0;
+    }
+    .blog_section .section_title {
+        margin-bottom: 60px;
+    }
+    .blog_section .single_blog {
+        margin-bottom: 50px;
+    }
+    .blog_section .single_blog h3 {
+        padding-top: 20px;
+        padding-bottom: 2px;
+    }
+    .blog_section .readmore.playfair {
+        margin: 40px auto 0;
+    }
+    .subscribe_section .section_title {
+        font-size: 46px;
+        line-height: 55px;
+    }
+    
+    
+    .footer_section .footer_menu a {
+        margin: 0 20px 8px;
+    }
+    .footer_section .quick_link {
+        padding: 30px 0;
+    }
+    .footer_section .row.pt_60 {
+        padding-top: 30px;
+    }
+    .footer_section {
+        padding: 70px 0;
+    }
+    
+    
+    
+}
+
+
+
+/* ===================Small Mobile Display==============*/
+
+@media (max-width: 479px) {
+    .hero_area .hero_content>h1 {
+        font-size: 41px;
+        line-height: 50px;
+    }
+    .subscribe_section .section_title,
+    .blog_section .section_title,
+    .about_section .section_title,
+    .upcoming_event .section_title {
+        font-size: 36px;
+        line-height: 40px;
+        padding-bottom: 32px;
+        margin-bottom: 60px;
+    }
+    .special_quote .quote_content>h2 {
+        font-size: 18px;
+        line-height: 35px;
+    }
+    .content_block .content_text>h1 {
+        font-size: 25px;
+        line-height: 34px;
+    }
+    .content_block .content_text>p {
+        padding-top: 20px;
+    }
+    
+    
+    .about_section .about_content1 h3 {
+        font-size: 26px;
+        line-height: 40px;
+    }
+    .about_content2>p {
+        font-size: 17px;
+    }
+    
+    
+    .subscribe_section form input {
+        border-width: 1px;
+        height: 58px;
+        padding: 15px 20px;
+    }
+    .subscribe_section form button {
+        height: 58px;
+    }
+    
+    
+    
+    
+}
