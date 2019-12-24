@@ -466,7 +466,8 @@ a {
 }.pb_45 {
     padding-bottom: 45px
 }.pb_50 {
-    padding-bottom: 50px
+    padding-top: 70px;
+
 }.pb_55 {
     padding-bottom: 55px
 }.pb_60 {
@@ -666,7 +667,7 @@ a {
 }.mb_95 {
     margin-bottom: 95px;
 }.mb_100 {
-    margin-bottom: 100px;
+    /* [disabled]margin-bottom: 100px; */
 }
 
 /*-----margin top*/
@@ -797,4 +798,3 @@ a {
 }.mr_100 {
     margin-right: 100px;
 }
-

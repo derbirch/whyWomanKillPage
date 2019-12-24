@@ -654,8 +654,8 @@ section.hero_area {
   z-index: 2;
 }
 .hero_area .hero_content>h1 {
-    font-size: 90px;
-    line-height: 90px;
+    font-size: 59px;
+    line-height: 68px;
 }
 .hero_area .hero_content > p {
   opacity: 0.8;
@@ -704,7 +704,7 @@ section.hero_area {
 .blog_section .section_title,
 .about_section .section_title,
 .upcoming_event .section_title {
-    padding-bottom: 41px;
+    padding-bottom: 0px;
 }
 .subscribe_section .section_title::before,
 .blog_section .section_title::before,
@@ -781,10 +781,13 @@ section.hero_area {
 
 /*------------------- start content block section style ------------------*/
 .content_block{
-    padding: 150px 0;
+    padding-top: 30px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 5px;
 }
 .content_block  .single_content{
-    margin-bottom: 250px;
+    margin-bottom: 86px;
 }
 .content_block  .single_content:last-child{
     margin-bottom: 0px;
@@ -834,7 +837,7 @@ section.hero_area {
   padding: 140px 0 130px;
 }
 .about_content1>p {
-    opacity: 0.6;
+    opacity: 0.71;
 }
 .about_content2>p {
     opacity: 0.7;
@@ -976,6 +979,20 @@ section.hero_area {
 .footer_section ul li a:hover{
     color: #194ffd;
     text-decoration: underline;
+}
+
+p {
+text-indent: 2em;
+/*em是相对单位，2em即现在一个字大小的两倍*/
+}
+
+.row_pic{
+	height: 300px;
+	
+}
+.row_pic_out{
+    margin-left: 0px;
+    margin-right: 0px;
 }
 /*------------------- end section style --------------------*/
 
