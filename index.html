@@ -14,7 +14,7 @@
 	
 
 	
-    <title>数据新闻 | 是什么，让她们变成“致命女人”？</title>
+    <title>数据新闻 | 家庭暴力离我们多远</title>
 
     <!--favicon icon-->
     <link rel="icon" href="images/favicon.png">
@@ -32,7 +32,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <!--venobox css-->
-    <link rel="stylesheet" href="css/venobox.css">
+	<!--
+    <link rel="stylesheet" href="css/venobox.css"> -->
 
     <!--carousel css-->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -78,7 +79,7 @@
                                 </ul>-->
                             </li>
 
-                            <li><a href="#body">WhyWomanKill</a></li>
+                            <li><a href="#body">正文</a></li>
 
                             <li><a href="#contact">关于我们</a></li>
                         </ul>
@@ -100,12 +101,35 @@
             <div class="row fullHeight align_row_center_center">
                 <div class="col-md-5">
                     <div class="hero_content">
-                        <h1 class="color_ff">是什么，<br/>让她们变成<br/>“致命女人”？</h1>
-                        <p class="color_ff pt_40 pb_60">——对中国女性家庭暴力现状的数据调查</p>
+                        <h1 class="color_ff">家庭暴力<br/>离我们多远？</h1>
+                        <p class="color_ff pt_40 pb_60">——对中国家庭暴力现状的数据调查</p>
                         <ul class="video align_row_left_center">
                             <li>
-								 <a href="https://youtu.be/bS5P_LAqiVg" class="d_block hero_video" data-vbtype="video" data-autoplay="true" data-gall="gall-video"><i class="fa fa-play"></i></a>
-							
+								 <a id="but" onclick="buttonClick();" href="#" class="d_block hero_video" data-vbtype="video" data-autoplay="true" data-gall="gall-video"><i class="fa fa-play"></i></a>
+							<script>  
+    var btn = document.getElementById("but");  
+    btn.onclick = function toggleSound(){
+       var video = document.getElementById('movie');
+        if(video.paused){ //如果已暂停则播放
+            video.play(); //播放控制
+       }else{ // 已播放点击则暂停
+            video.pause(); //暂停控制
+       }
+    }
+    $(".playbtn").click(function () {
+        console.log($('#movie').get(0).paused);
+        $('#movie').get(0).play();
+    });
+    function toggleSound(){
+        if ($('#movie').get(0).paused) {
+            $('#movie').get(0).play();
+        }
+        else {
+            $('#movie').get(0).pause();
+        }
+    };
+
+</script>  
 							
 							</li>
 							
@@ -115,7 +139,9 @@
                 </div>
 
                 <div class="col-md-7">
-                    <div class="hero_img"><img src="https://i.loli.net/2019/12/17/TkIuKtqbfhJLCrZ.png" alt="1.png"></div>
+                    <div class="hero_img">
+                      <video id="movie" src="video/视频.mp4" poster="images/cover.png" controls="controls" height="100%" width="100%" style="margin-left:50px;margin-right:50px"></video>
+                    </div>
                 </div>
             </div>
         </div>
@@ -124,7 +150,12 @@
         ==End hero section==  
     =========================================-->
 
-    <!-- ======================================= 
+  
+    
+	<div class="tlinks">WardZhou <a href="http://wardzhou.art/"  title="wardzhou"></a></div>
+
+
+					  <!-- ======================================= 
         ==start special quote section==  
     =========================================-->
     <section class="special_quote pt_20 pb_50">
@@ -144,11 +175,6 @@
     <!-- ======================================= 
         ==End special quote section==  
     =========================================-->
-    
-	<div class="tlinks">WardZhou <a href="http://wardzhou.art/"  title="wardzhou"></a></div>
-
-
-
 
     <!-- ======================================= 
         ==start content block section==  
@@ -159,38 +185,41 @@
                 <div class="col-md-12">
                     <div class="single_content align_row_spacebetween">
                         <div class="content_img">
-							<img src="https://i.loli.net/2019/12/25/yEx4NZ5CM8RXJaL.png" >
+							 <iframe align="center" width="100%" height="400px" src="page/十年案件数量折线面积.html"  frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 							
                           </div>
                         <div class="content_text">
-                            <h1 class="color_212">导 语</h1>
+                            <h1 class="color_212"></h1>
                             <p class="pt_30">
-								2019年10月，现象级美剧《致命女人》，将家暴话题再次抬到舆论场正中。据人民日报本年度发布的统计，中国2.7亿个家庭中，有近30%的家庭存在着不同程度的家庭暴力问题。</p>
-							 <p class="pt_30">	
-								中国家庭中的暴力行为，正在让更多稳重的丈夫、温柔的妻子、负责的父亲、孝顺的孩子走上“致命”的道路。</p>
-							 <p class="pt_30">	
-								我们耳熟能详的“棍棒底下出孝子”、“打是亲骂是爱”等等传统观念，正打着“爱”的幌子，为家庭暴力提供着温床。</p>
-							 <p class="pt_30">
-								而法律，将如何将这些饱受伤痛的人拉出家庭暴力的深渊。</p>
+								2019年11月25日是第26个“消除对妇女暴力行为国际日”，因模仿蒙娜丽莎走红的美妆博主@宇芽yuyamika，在个人微博上发布了一条自己被前男友@沱沱的风魔教 家暴的视频。随后该条微博登顶当日微博热搜榜首。<span class="bold">“家庭暴力”</span>一词再次进入公众舆论的视线。</p>
+							<p class="pt_30 pb_35">据人民日报本年度发布的统计，中国<span class="bold">2.7亿</span>个家庭中，有近<span class="bold">30%</span>的家庭存在着不同程度的家庭暴力问题。</p>
+							 <p class="pt_30 pb_35">从2009-2019年涉及家庭暴力的裁判文书统计结果来看，案件数量自2009年开始逐年上升，2013年开始快速增长，至2015年达到高峰，随后逐年下滑，增长逐步放缓。</p>
                         </div>
-                    </div>
-
+						</div>
+					
+					
+					<br/>
+					<h1 class="color_212"  id="body" align="center">“大隐隐于市”的家庭暴力</h1>
                     <div class="single_content align_row_spacebetween">
-                        <div class="content_img">
-                           
-						<div id="page2">
-        <iframe align="center" width="100%" height="400px" src="page/10年案件分布图（蓝）.html"  frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
-   </div>
-
-						
-                        </div>
-                        <div class="content_text">
-                            <h1 class="color_212"  id="body">Why women kill?</h1>
-                            <p class="pt_30 pb_35">在社交媒体引发广泛共鸣的《致命女人》，讲述了不同时代的三位女性对婚姻问题的处理，面对家暴，她们=掏刀动枪刀、重拳出击。结局中，出轨的丈夫和家暴男双双中枪身亡、骗婚的丈夫患病去世、“插”足他人家庭的绿茶婊也被“两肋插刀”，最终，结局圆满、皆大欢喜。</p>
-							<p class="pt_30 pb_35">中国网友在豆瓣为“致命女人”们打出了9.3的高分，但不得不承认，对家暴如此果敢缜密的处理，目前在我国不是多数。我国家庭暴力的现状和美国爽剧之间，还存在着诸多差异，但不能否认，在中美两国，家庭暴力，都是普遍的社会问题，甚至已经呈现出一定的地域特征。</p>
+                    <div class="content_img">                     
+       						<div style="margin-top: 40px">
+						<iframe align="center" width="100%" height="400px" src="page/10年案件分布图（蓝）.html"  frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>  
+								</div>
+					</div>
+                        <div class="content_text" style="margin-top: 28px">
+                           <p class="pt_30 pb_35">家暴，又被称为“家庭癌症”，目前已经成为受到广泛关注的社会问题。《中华人民共和国反家庭暴力法》第二条，将家庭暴力定义为“家庭成员之间以殴打、捆绑、残害、限制人身自由以及经常性谩骂、恐吓等方式实施的身体、精神等侵害行为”。</p> 
+                           <p class="pt_30 pb_35">虽然已有法条明确定性，但各地的家暴案件能否进入司法程序,很大程度上取决于家暴受害者的维权意识。各个省份不尽相同的婚姻文化和反家暴地方性法规，也让我国各省份家庭暴力案件数目相差较大。从空间分布看，涉及家庭暴力的案件多集中于中部和东部发达地区。湖南、上海等地均为多发区。</p>
+						   
                         <!--    <a href="#" class="d_inline playfair fw_700">Explore now <i class="fa fa-long-arrow-right"></i></a> -->
                         </div>
-                    </div>
+
+					</div>
+					<p class="pt_30 pb_35">从数量看，2009-2016，湖南的案件数量均居于首位，随后呈现出下滑趋势。上海自2016年起，数量快速增长，2019年达到历史最高（636件）</p>
+					
+					<div class="row" style="margin-bottom: 35px">
+				<p class="color_ff pt_30">&nbsp;</p>
+			<iframe align="center" width="100%" height="400px" src="page/10年历年分省案件数量条形图.html"  frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>	
+			</div>
                     <!--/single_content-->
                 </div>
                 <!--/col-->
@@ -210,18 +239,18 @@
               <div class="row">
                 <div class="col-md-3 col-sm-5">
                     <div class="about_img">
-						<iframe align="center" width="300px" height="270" src="page/原告性别比.html"  frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no">
+						<iframe align="center" width="300px" height="270" src="page/原告性别比dark.html"  frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no">
 						</iframe>
 					</div>
                 </div>
                 <div class="col-md-5 col-sm-7">
                     <div class="about_content1 pl_70 pr_50">
-                        <p class="color_ff pt_30">根据2009-2019年有关家庭暴力案件判决书的分析结果，目前我国家庭暴力的主要受害者仍要是女性。其中一部分受害者隐忍不发，在遭遇杀害后才由家人代为起诉，予以凶手制裁。</p>
+                        <p class="color_ff pt_30">2019年涉及家庭暴力的案件中，主要受害者主要是女性。其中部分受害者在遭遇家庭暴力时隐忍不发，在遭遇杀害后才由家人代为起诉，予以凶手制裁。</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12">
                     <div class="about_content2">
-                        <p class="color_ff pt_30">央视网援引全国妇联的统计数据，70%的家暴者不仅家暴妻子，还对孩子施暴。充满暴力的原生家庭又给孩子未来的家买下了隐患，代代相传的惯性施暴，再加上传统观念中“能忍则忍，以和为贵”的家庭观念，家庭暴力正逐步演变为解不开的死循环。 </p>
+                        <p class="color_ff pt_30">央视网援引全国妇联的统计数据，70%的家暴者不仅家暴妻子，还对孩子施暴。充满暴力的原生家庭又给孩子未来的家买下了隐患，代代相传的惯性施暴，再加上传统观念中“能忍则忍，以和为贵”的家庭观念，家庭暴力也许正逐步演变为解不开的死循环。 </p>
                     </div>
                 </div>
             </div>
@@ -233,23 +262,21 @@
 	 <section class="content_block">
         <div class="container">
             <div class="row">
-				<h1 class="color_212">“我觉得打女人很low，但适当的管教，<br/>不是应该的吗？”</h1>
+				<h1 class="color_212" align="center">家庭暴力的产生原因是什么？</h1>
                 <div class="col-md-12">
                     <div class="single_content align_row_spacebetween">
-                        <div class="content_img">
-							<img src="https://i.loli.net/2019/12/25/27IBML9d34aJhxy.gif" >
+                        <div class="content_img" style="margin-top: 40px">
+							<img src="https://i.loli.net/2020/01/01/PTUO8Ed5NRyXewa.png" >
 							</div>
 						
-                        <div class="content_text">
+                        <div class="content_text" style="margin-top: 40px">
                             
-                            <p class="pt_30">
-								2019年11月25日，第26个“消除对妇女的暴力行为国际日”，因模仿蒙娜丽莎走红的美妆博主@宇芽yuyamika，在个人微博上发布了一条自己被前男友@沱沱的风魔教 家暴的视频。不久便登顶当日微博热搜榜首，引发网友对“家暴”的热议。</p>
+                             <p class="pt_30">	
+								宇芽事件中，沱沱的两任前妻也发声表示，她们都曾遭受沱沱的家暴，只是先前一直隐忍。宇芽也是在遭受第五次家暴时才发声揭露沱沱的暴行。</p>
 							 <p class="pt_30">	
-								沱沱的两任前妻也发声表示，她们都曾遭受沱沱的家暴，只是先前一直隐忍。宇芽也是在遭受第五次家暴时才发声揭露沱沱的暴行。</p>
-							 <p class="pt_30">	
-								那沱沱为何会对自己的伴侣们持续施暴？</p>
+								当被问及沱沱长期对其施暴的缘故时</p>
 							 <p class="pt_30">
-								她们对回答如出一辙：“是因为一些鸡毛蒜皮的小事。”</p>
+								她们的回答如出一辙：“是因为一些鸡毛蒜皮的小事。”</p>
                         </div>
                     </div>
 	
@@ -266,8 +293,7 @@
                             
                             <p class="pt_30 pb_35">根据我国《反家暴法》第五章第三十三条，“加害人实施家庭暴力，构成违反治安管理行为的，依法给予治安管理处罚；构成犯罪的，依法追究刑事责任。”施暴的行为人根据案情的严重程度，应依法承担包括民事责任、行政责任和刑事责任在内的法律责任。</p>
 							<p class="pt_30 pb_35">由于宇芽遭受的暴力未能达到轻伤或以上程度，当地公安机关予以沱沱行政拘留20日并罚款的行政处罚，媒体和网友也对沱沱的暴力行径做出了谴责。</p>
-							<p class="pt_30 pb_35">面对公安机关的处罚和社会舆论的谴责，沱沱将自己的微博签名更改为“目中无人无法无天”。我们也可以从他几年前的微博中感受到这个家暴成性的男人对“家庭暴力”的理解。</p>
-							
+														
                         <!--    <a href="#" class="d_inline playfair fw_700">Explore now <i class="fa fa-long-arrow-right"></i></a> -->
                         </div>
                     </div>
@@ -291,15 +317,19 @@
 	
 	<section class="content_block">
 		 <div class="container">
+			 
+			  
 			 <div class="row">
-				<div class="row_pic_out"> 
+			<!--	<div class="row_pic_out"> 
 		 <img src="https://i.loli.net/2019/12/17/Dr3m6CkBjTM5hYg.png" alt="3.png"  class="row_pic">
 							<img src="https://i.loli.net/2019/12/25/UGgA1O3z5n6VsJ8.png"  class="row_pic">
-					</div> 
-							<p class="pt_30 pb_35">面对公安机关的处罚和社会舆论的谴责，沱沱将自己的微博签名更改为“目中无人无法无天”。我们也可以从他几年前的微博中感受到这个家暴成性的男人对“家庭暴力”的理解。</p>
-							<p class="pt_30 pb_35">许多家庭暴力的施暴者，以“管教”之名施暴，甚至不觉得自己的行为有什么过错，将暴力随意化、日常化。在央视八集系列片《中国反家暴纪事》中，有这样一段对受害者的采访，她这样说道：“去做笔录的时候，警察一定要我填写他家暴的动机，可他打我并不需要特定的原因，什么时候想打，便打了。”</p>
-							<p class="pt_30 pb_35">也许这就是“家暴只有零次和无数次”的原因吧。</p>
+					</div> -->
+							<p class="pt_30 pb_35">2019年审判文书数据，在涉及家庭暴力的案件中，离婚纠纷占据主要部分，在案件类型上，民事案件共有3571件占95%，刑事案件比重较小一共97起占3%。
+				</p>
+							<p class="pt_30 pb_35"></p>
+							<p class="pt_30 pb_35"></p>
 		 </div>
+				
 		 </div>
 			 </section>
     <!-- ======================================= 
@@ -318,10 +348,10 @@
             <div class="row">
                 
                     <div class="about_content1 pl_70 pr_50">
-                        <p class="color_ff pt_30">2000年，湖南省出台了全国第一部反对家庭暴力的地方性法规《关于预防和制止家庭暴力的决议》，从2009-2011年各省案件数量的数据结果我们可以看出，湖南省的家暴案件始终在我国各个省份中遥遥领先。</p>
-						<p class="color_ff pt_30">我们可以理解为湖南省的家暴情况更为严重，但从另一个角度来说——判决数量多恰恰也证明了，在人口基数庞大的湖南，正有更多家庭暴力受害者获得了法律的援助，脱离苦海。</p>
-						<p class="color_ff pt_30">除此之外，2016年3月8日，包含6章38条的反家暴法正式施行，上图中2016年后的判决数据总量明显回降，这也侧面说明，法律的出台，引导约束着现有的社会家庭关系，让普罗大众更加重视家庭暴力问题。</p>
-						 <p class="color_ff pt_30">相关法律对家暴定性的完善，让正在遭受家暴的弱势群体有了更多的保障。但回看当下实事：反复家暴的李阳、蒋劲夫之流，不仅没有受到实质性的惩罚，反而还有人为他们声援；遭受家暴意图自救的女性会被亲属以“打是亲骂是爱”、“女人离婚吃亏”等传统思想绑架。可见社会大众的思想观念转变仍然任重道远，反家暴法，作为“先行标杆”，必须为此打下坚实的基础。</p>
+                        <p class="color_ff pt_30">2000年，湖南省出台了全国第一部反对家庭暴力的地方性法规《关于预防和制止家庭暴力的决议》，在人口基数庞大的湖南，正有更多家庭暴力受害者获得法律的援助，远离伤害。</p>
+						
+						<p class="color_ff pt_30">2016年3月8日，包含6章38条的《中华人民共和国反家庭暴力法》正式施行，上图中2016年后的判决数据总量明显回降，这也侧面说明，法律的出台，引导约束着现有的社会家庭关系，让普罗大众更加重视家庭暴力问题。</p>
+						 <p class="color_ff pt_30">相关法律的完善，让正在遭受家暴的弱势群体有了更多的保障。但回看当下实事：反复家暴的李阳、蒋劲夫，还有不少公众人物以“一个巴掌拍不响”为由为他们声援。根据《上海大学学报》刊登过的“性别、代际与家庭暴力的幸存者：一项基于两代受暴妇女的生命史研究”中的数据，在遭受家暴后，有79.8%的受害人会首先向家人和朋友寻求帮助，这意味着法律的理性之外，社会大众对家暴的定性也很重要。“打是亲骂是爱”、“女人离婚吃亏”等传统思想对受害者绑架，也是目前急需克服的问题，走出家暴问题上社会观念的误区，并非易事。</p>
                     </div>
                               
             </div>
@@ -329,10 +359,10 @@
 			
 			<div class="row">
 				<p class="color_ff pt_30">&nbsp;</p>
-			<iframe align="center" width="100%" height="400px" src="page/10年历年分省案件数量条形图.html"  frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>	
+			
 			</div>
 			<div class="row">
-			 <p class="color_ff pt_30">《致命女人》的火热不应该只停留在剧集层面，我们应该清楚地认识到，是家庭暴力将妻子们逼上“致命道路”，家庭暴力不是“家丑不可外扬”，让我们杜绝家庭暴力，鼓励积极发声，少几个“致命女人”，多一点和睦家庭。</p>
+			 <p class="color_ff pt_30">相关舆论事件的爆出，让“家庭暴力”高调重回公众视野，舆论对此的密切关注，是我国反家暴过程中的重要一环。在法律体系逐步健全的背景下，反家暴理念的革新也应紧随其后，为了少一些悲剧发生，立法者、司法者、普法者、守法者，都还在路上。</p>
 			</div>
         </div>
     </section>

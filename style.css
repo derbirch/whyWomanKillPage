@@ -784,7 +784,7 @@ section.hero_area {
     padding-top: 30px;
     padding-right: 0;
     padding-left: 0;
-    padding-bottom: 5px;
+    padding-bottom: 29px;
 }
 .content_block  .single_content{
     margin-bottom: 86px;
@@ -798,6 +798,7 @@ section.hero_area {
 .single_content:nth-child(even) .content_img{
     padding-right: 0;
     padding-left: 70px;
+    padding-top: 0px;
 }
 .content_block .content_img{
     width: 58.3333%;
@@ -993,6 +994,11 @@ text-indent: 2em;
 .row_pic_out{
     margin-left: 0px;
     margin-right: 0px;
+}
+
+
+.bold{
+    font-weight: bold;
 }
 /*------------------- end section style --------------------*/
 
